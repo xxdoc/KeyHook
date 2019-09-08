@@ -173,7 +173,10 @@ blnHook = True
 End Select
 End If
 If Form1.Check2.Value = 1 Then
-If p.vkCode = VK_CONTROL Then
+If p.vkCode = VK_LCONTROL Then
+blnHook = True
+End If
+If p.vkCode = VK_RCONTROL Then
 blnHook = True
 End If
 End If
@@ -186,7 +189,10 @@ blnHook = True
 End Select
 End If
 If Form1.Check4.Value = 1 Then
-If p.vkCode = VK_MENU Then
+If p.vkCode = VK_LMENU Then
+blnHook = True
+End If
+If p.vkCode = VK_RMENU Then
 blnHook = True
 End If
 End If
